@@ -1,3 +1,4 @@
 - mettre vrais projets
 - faire vrai tri des réalisations par date (récentes ou non)
+- changer adresse détail projet
 
