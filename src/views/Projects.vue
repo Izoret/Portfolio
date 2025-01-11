@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import projectsData from "../data/projects.json";
-import {Project} from "../util/types.ts";
+import {Project} from "../ts/types.ts";
 
 const projets: Project[] = projectsData.projects;
 
