@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import {computed} from 'vue';
-import {useRoute} from 'vue-router';
+import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const links = [
-  {name: "Présentation", path: "/presentation"},
-  {name: "Projets", path: "/projects"},
-  {name: "Contact", path: "/contact"},
+  { name: "Présentation", path: "/presentation" },
+  { name: "Projets", path: "/projects" },
+  { name: "Contact", path: "/contact" },
 ];
 
 const isProjectsActive = computed(() => {
@@ -19,6 +19,11 @@ const isLinkActive = computed(() => (path: string) => {
   }
   return route.path === path;
 });
+
+const isMenuOpen = ref(false);
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 
 <template>
@@ -42,6 +47,28 @@ const isLinkActive = computed(() => (path: string) => {
               {{ link.name }}
             </router-link>
           </div>
+        </div>
+        <!-- Burger menu button for mobile -->
+        <div class="flex md:hidden items-center">
+          <button @click="toggleMenu" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div v-if="isMenuOpen" class="md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <router-link
+              v-for="link in links"
+              :key="link.path"
+              :class="{ 'gradient-text': isLinkActive(link.path) }"
+              :to="link.path"
+              class="block nav-link"
+          >
+            {{ link.name }}
+          </router-link>
         </div>
       </div>
     </div>
