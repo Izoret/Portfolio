@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import {computed} from 'vue';
 import projectsData from "../data/projects.json";
-import {Project} from "../util/types.ts";
+import {Project} from "../ts/types.ts";
 
 
 const recentProjects = computed<Project[]>(() => {

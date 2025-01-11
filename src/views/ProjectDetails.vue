@@ -2,7 +2,7 @@
 import {onMounted, ref} from "vue";
 import {useRoute} from "vue-router";
 import projectsData from "../data/projects.json";
-import {Project} from "../util/types.ts";
+import {Project} from "../ts/types.ts";
 
 const route = useRoute();
 const projet = ref<Project | undefined>(undefined);
