@@ -1,0 +1,135 @@
+{
+  "projects": [
+    {
+      "id": "projet-1",
+      "titre": "Application de Gestion de Budget",
+      "description": "Application web permettant de suivre ses dépenses et revenus",
+      "categorie": "academique",
+      "date": "Printemps 2024",
+      "technologies": [
+        "Vue.js",
+        "Node.js",
+        "MongoDB"
+      ],
+      "presentation": "Application complète de gestion de budget personnel développée dans le cadre de mon projet de fin d'études. Cette solution permet aux utilisateurs de suivre leurs finances de manière intuitive et efficace.",
+      "fonctionnalites": [
+        "Suivi des dépenses en temps réel",
+        "Catégorisation automatique",
+        "Génération de rapports mensuels",
+        "Export des données en CSV"
+      ],
+      "image": "/images/budget-app.jpg",
+      "github": "https://github.com/username/projet",
+      "demo": "https://demo-projet.example.com"
+    },
+    {
+      "id": "projet-3",
+      "titre": "Site E-commerce",
+      "description": "Développement d'une plateforme de vente en ligne",
+      "categorie": "professionnel",
+      "date": "Automne 2023",
+      "technologies": [
+        "React",
+        "Express",
+        "PostgreSQL"
+      ],
+      "presentation": "Plateforme e-commerce complète avec gestion des produits, panier d'achat et système de paiement sécurisé. Développée dans un contexte professionnel pour un client du secteur retail.",
+      "fonctionnalites": [
+        "Catalogue de produits",
+        "Système de panier",
+        "Paiement sécurisé",
+        "Gestion des commandes"
+      ],
+      "image": "/images/ecommerce.jpg",
+      "github": "https://github.com/username/ecommerce",
+      "demo": "https://demo-ecommerce.example.com"
+    },
+    {
+      "id": "projet-4",
+      "titre": "CRM pour Cabinet Médical",
+      "description": "Système de gestion de relation client pour professionnels de santé",
+      "categorie": "professionnel",
+      "date": "Été 2023",
+      "technologies": [
+        "Vue.js",
+        "Laravel",
+        "MySQL"
+      ],
+      "presentation": "Solution CRM sur mesure pour un cabinet médical, permettant la gestion des patients, des rendez-vous et des dossiers médicaux de manière sécurisée.",
+      "fonctionnalites": [
+        "Gestion des rendez-vous",
+        "Dossiers patients électroniques",
+        "Facturation automatisée",
+        "Rappels SMS/Email"
+      ],
+      "image": "/images/medical-crm.jpg",
+      "github": "https://github.com/username/medical-crm",
+      "demo": "https://demo-crm.example.com"
+    },
+    {
+      "id": "projet-5",
+      "titre": "Bot Discord",
+      "description": "Bot pour gérer les événements d'une communauté",
+      "categorie": "personnel",
+      "date": "Printemps 2023",
+      "technologies": [
+        "Python",
+        "Discord.js"
+      ],
+      "presentation": "Bot Discord développé pour faciliter la gestion d'une communauté de développeurs. Permet l'organisation d'événements et la modération automatique.",
+      "fonctionnalites": [
+        "Création d'événements",
+        "Système de rappels",
+        "Modération automatique",
+        "Statistiques de la communauté"
+      ],
+      "image": "/images/discord-bot.jpg",
+      "github": "https://github.com/username/discord-bot",
+      "demo": "https://top.gg/bot/example"
+    },
+    {
+      "id": "projet-6",
+      "titre": "Application Mobile de Fitness",
+      "description": "Application de suivi d'entraînement et de nutrition",
+      "categorie": "personnel",
+      "date": "Hiver 2022-2023",
+      "technologies": [
+        "React Native",
+        "Redux",
+        "Firebase"
+      ],
+      "presentation": "Application mobile personnelle développée pour suivre mes entraînements et mon alimentation. L'app propose des fonctionnalités de suivi de progression et de planification.",
+      "fonctionnalites": [
+        "Suivi des entraînements",
+        "Journal alimentaire",
+        "Calcul des macronutriments",
+        "Graphiques de progression"
+      ],
+      "image": "/images/fitness-app.jpg",
+      "github": "https://github.com/username/fitness-app",
+      "demo": "https://demo-fitness.example.com"
+    },
+    {
+      "id": "projet-2",
+      "titre": "Plateforme d'Apprentissage en Ligne",
+      "description": "LMS moderne pour l'enseignement à distance",
+      "categorie": "academique",
+      "date": "Hiver 2023-2024",
+      "technologies": [
+        "React",
+        "Firebase",
+        "Material-UI"
+      ],
+      "presentation": "Plateforme d'apprentissage en ligne développée pour faciliter l'enseignement à distance. Projet réalisé en collaboration avec le département informatique de l'université.",
+      "fonctionnalites": [
+        "Gestion des cours et des modules",
+        "Système de quiz interactifs",
+        "Suivi de progression",
+        "Chat en temps réel"
+      ],
+      "image": "/images/lms.jpg",
+      "github": "https://github.com/username/lms",
+      "demo": "https://demo-lms.example.com"
+    }
+  ]
+}

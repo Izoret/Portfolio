@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-dosis text-lg;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background-attachment: fixed;
+}
+
+.page-container {
+    @apply max-w-6xl mx-auto px-4 py-12;
+}
+
+.section-title {
+    @apply text-4xl font-bold mb-8 text-white relative inline-block;
+}
+
+.section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-24 h-1 bg-primary-500 rounded-full -mb-2;
+    animation: glow 2s ease-in-out infinite;
+    box-shadow: 0 0 15px theme('colors.primary.500');
+}
+
+.card {
+    @apply bg-opacity-10 bg-white backdrop-blur-lg rounded-lg p-8 border border-white/10
+    transition-all duration-500 hover:shadow-lg hover:shadow-primary-500/20
+    hover:border-primary-500/50 hover:translate-y-[-2px];
+}
+
+.nav-link {
+    @apply px-4 py-2 rounded-full transition-all duration-300
+    hover:bg-primary-500/20 hover:text-primary-300 text-white;
+}
+
+.gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-300 to-primary-500 animate-gradient;
+}
+
+.floating {
+    @apply animate-float;
+}
