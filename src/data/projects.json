@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": "projet-1",
+      "id": "1",
       "titre": "Application de Gestion de Budget",
       "description": "Application web permettant de suivre ses dépenses et revenus",
       "categorie": "academique",
@@ -23,7 +23,7 @@
       "demo": "https://demo-projet.example.com"
     },
     {
-      "id": "projet-3",
+      "id": "3",
       "titre": "Site E-commerce",
       "description": "Développement d'une plateforme de vente en ligne",
       "categorie": "professionnel",
@@ -45,7 +45,7 @@
       "demo": "https://demo-ecommerce.example.com"
     },
     {
-      "id": "projet-4",
+      "id": "4",
       "titre": "CRM pour Cabinet Médical",
       "description": "Système de gestion de relation client pour professionnels de santé",
       "categorie": "professionnel",
@@ -67,7 +67,7 @@
       "demo": "https://demo-crm.example.com"
     },
     {
-      "id": "projet-5",
+      "id": "5",
       "titre": "Bot Discord",
       "description": "Bot pour gérer les événements d'une communauté",
       "categorie": "personnel",
@@ -88,7 +88,7 @@
       "demo": "https://top.gg/bot/example"
     },
     {
-      "id": "projet-6",
+      "id": "6",
       "titre": "Application Mobile de Fitness",
       "description": "Application de suivi d'entraînement et de nutrition",
       "categorie": "personnel",
@@ -110,7 +110,7 @@
       "demo": "https://demo-fitness.example.com"
     },
     {
-      "id": "projet-2",
+      "id": "2",
       "titre": "Plateforme d'Apprentissage en Ligne",
       "description": "LMS moderne pour l'enseignement à distance",
       "categorie": "academique",
