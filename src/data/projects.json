@@ -1,7 +1,81 @@
 {
   "projects": [
     {
-      "id": "1",
+      "id": "5",
+      "titre": "Concerts du pancréas",
+      "description": "Application web séparée en API et frontend",
+      "categorie": "academique",
+      "date": "Automne 2024",
+      "technologies": [
+        "PHP - Symfony",
+        "TypeScript - Vue.js",
+        "MySQL"
+      ],
+      "presentation": [
+        "Le projet Concerts du pancréas est un projet académique qui consistait à créer un site web de gestion d'évènements, en petite équipe, avec différentes contraintes techniques.",
+        "L'intérêt principal est la séparation entre le frontend et le backend : le frontend est une application serverless en Vue.js qui est globalement assez simple et qui obtient ses informations par requêtes AJAX au backend, une API RESTful créée avec Symfony et APIPlatform. Un autre point d'intérêt est la connexion avec un autre site que nous avions réalisé, un site d'annuaire d'utilisateurs, et la connexion entre ces sites permet notamment de pré-remplir les champs d'inscription aux concerts avec le code d'annuaire d'un utilisateur.",
+        "Au sein de ce projet, j'étais un des 4 développeurs du groupe, et en plus de réaliser un bon nombre de tâches, je veillais à apporter mon aide au reste de l'équipe quand ils en avaient besoin pour leurs propres tâches. Le travail d'équipe était ainsi solide et efficace, et nous avons donc pu rapidement mener ce projet à sa conclusion."
+      ],
+      "fonctionnalites": [
+        "API RESTful sécurisée",
+        "Interface Vue.js simple et responsive"
+      ],
+      "image": "/projects/concerts.png",
+      "repository": "https://gitlabinfo.iutmontp.univ-montp2.fr/projet-web-concert/",
+      "link": "https://webinfo.iutmontp.univ-montp2.fr/~fuertesn/concerts-du-pancreas-front/"
+    },
+    {
+      "id": "4",
+      "titre": "Adam",
+      "description": "Bot d'intéractions utilisateur avec serveur IA",
+      "categorie": "personnel",
+      "date": "Automne 2024",
+      "technologies": [
+        "Modèles d'IA",
+        "Python - PyTorch - Flask",
+        "JavaScript - Node.js"
+      ],
+      "presentation": [
+        "Adam est un algorithme utilitaire que j'ai créé dans le contexte de bots Discord. La technologie utilisée ici est un serveur Node.js avec la librairie Discord.js.",
+        "En plus de réagir aux commandes des utilisateurs, j'ai permis à Adam de créer des réponses à des prompts pour être plus qu'un simple bot déterministe. Pour cela, j'ai réalisé un serveur Flask utilisant PyTorch avec différents modèles d'IA fine-tunés par moi-même pour répondre au mieux aux utilisateurs.",
+        "Cette expérience m'a permis d'accroître mes compétences en IA et en JavaScript, tout en fournissant un outil intéressant à différents serveurs Discord."
+      ],
+      "fonctionnalites": [
+        "Serveur LLM pour répondre aux prompts",
+        "Interface utilisateur simple",
+        "Très facilement extensible pour l'ajout de commandes"
+      ],
+      "image": "/projects/adam.png",
+      "repository": "https://github.com/Izoret/Adam",
+      "link": "https://discord.com/oauth2/authorize?client_id=1291689809005248542&scope=bot&permissions=1099511627775"
+    },
+    {
+      "id": "3",
+      "titre": "Autoreg",
+      "description": "Développement d'un système d'automatisation de tâches",
+      "categorie": "professionnel",
+      "date": "Printemps 2024",
+      "technologies": [
+        "Python - Tkinter",
+        "GitLab CI/CD",
+        "LDAP",
+        "Administration réseau"
+      ],
+      "presentation": [
+        "Autoreg est un outil d'automatisation de tâches que j'ai réalisé pour le CINES, le centre de calcul le plus puissant de France.",
+        "Cet outil possède un unique noyau moteur qui réalise les tâches à automatiser, mais l'utilisation de ce noyau se présente sous deux formes : une interface graphique pour utilisation manuelle, et une pipeline automatique CI/CD couplée à un script Bash qui va lancer lui-même l'application. Ces deux méthodes sont dues à plusieurs contraintes durant le développement qui m'ont poussées à réaliser une solution qui fonctionnerait dans tous les cas possibles.",
+        "Au niveau de l'automatisation elle-même, elle consiste à réaliser des manipulations sur le serveur LDAP pour y enregistrer ou modifier des données, manipulations autrefois réalisées manuellement. Il y a également un système de requêtes HTTPS vers différents services ainsi que de la communication avec une base MySQL, mais le travail le plus conséquent était au niveau du LDAP."
+      ],
+      "fonctionnalites": [
+        "Automatisation d'opérations LDAP",
+        "Système de vérification, de sécurité et de logging",
+        "Interface graphique simple",
+        "Pipeline et jobs CI/CD"
+      ],
+      "image": "/projects/autoreg.png"
+    },
+    {
+      "id": "2",
       "titre": "Format'IUT",
       "description": "Application web de gestion de stages et alternances",
       "categorie": "academique",
@@ -23,108 +97,11 @@
         "Import / Export de données en CSV"
       ],
       "image": "/projects/formatiut.png",
-      "github": "https://github.com/Izoret/FormatIUT",
+      "repository": "https://github.com/Izoret/FormatIUT",
       "link": "https://webinfo.iutmontp.univ-montp2.fr/~fuertesn/devapplicationformatiut/web/controleurFrontal.php"
     },
     {
-      "id": "2",
-      "titre": "",
-      "description": "",
-      "categorie": "academique",
-      "date": "Hiver 2023-2024",
-      "technologies": [
-        "React",
-        "Firebase",
-        "Material-UI"
-      ],
-      "presentation": [],
-      "fonctionnalites": [
-        "Gestion des cours et des modules",
-        "Système de quiz interactifs",
-        "Suivi de progression",
-        "Chat en temps réel"
-      ],
-      "image": "/projects/lms.png",
-      "github": "https://github.com/username/lms",
-      "link": "https://demo-lms.example.com"
-    },
-    {
-      "id": "3",
-      "titre": "Autoreg",
-      "description": "Développement d'un système d'automatisation de tâches",
-      "categorie": "professionnel",
-      "date": "Printemps 2024",
-      "technologies": [
-        "Python + Tkinter",
-        "GitLab CI/CD",
-        "LDAP",
-        "Administration réseau"
-      ],
-      "presentation": [
-        "Autoreg est un outil d'automatisation de tâches que j'ai réalisé pour le CINES, le centre de calcul le plus puissant de France.",
-        "Cet outil possède un unique noyau moteur qui réalise les tâches à automatiser, mais l'utilisation de ce noyau se présente sous deux formes : une interface graphique pour utilisation manuelle, et une pipeline automatique CI/CD couplée à un script Bash qui va lancer lui-même l'application. Ces deux méthodes sont dues à plusieurs contraintes durant le développement qui m'ont poussées à réaliser une solution qui fonctionnerait dans tous les cas possibles.",
-        "Au niveau de l'automatisation elle-même, elle consiste à réaliser des manipulations sur le serveur LDAP pour y enregistrer ou modifier des données, manipulations autrefois réalisées manuellement. Il y a également un système de requêtes HTTPS vers différents services ainsi que de la communication avec une base MySQL, mais le travail le plus conséquent était au niveau du LDAP."
-      ],
-      "fonctionnalites": [
-        "Automatisation d'opérations LDAP",
-        "Système de vérification, de sécurité et de logging",
-        "Interface graphique simple",
-        "Pipeline et jobs CI/CD"
-      ],
-      "image": "/projects/autoreg.png"
-    },
-    {
-      "id": "4",
-      "titre": "CRM pour Cabinet Médical",
-      "description": "Système de gestion de relation client pour professionnels de santé",
-      "categorie": "professionnel",
-      "date": "Été 2023",
-      "technologies": [
-        "Vue.js",
-        "Laravel",
-        "MySQL"
-      ],
-      "presentation": [],
-      "fonctionnalites": [
-        "Gestion des rendez-vous",
-        "Dossiers patients électroniques",
-        "Facturation automatisée",
-        "Rappels SMS/Email"
-      ],
-      "image": "/projects/medical-crm.png",
-      "github": "https://github.com/username/medical-crm",
-      "link": "https://demo-crm.example.com"
-    },
-    {
-      "id": "5",
-      "titre": "Adam",
-      "description": "Bot d'intéractions utilisateur avec serveur IA",
-      "categorie": "personnel",
-      "date": "Automne 2024",
-      "technologies": [
-        "Modèles d'IA",
-        "Python",
-        "PyTorch",
-        "Flask",
-        "JavaScript",
-        "Node.js"
-      ],
-      "presentation": [
-        "Adam est un algorithme utilitaire que j'ai créé dans le contexte de bots Discord. La technologie utilisée ici est un serveur Node.js avec la librairie Discord.js.",
-        "En plus de réagir aux commandes des utilisateurs, j'ai permis à Adam de créer des réponses à des prompts pour être plus qu'un simple bot déterministe. Pour cela, j'ai réalisé un serveur Flask utilisant PyTorch avec différents modèles d'IA fine-tunés par moi-même pour répondre au mieux aux utilisateurs.",
-        "Cette expérience m'a permis d'accroître mes compétences en IA et en JavaScript, tout en fournissant un outil intéressant à différents serveurs Discord."
-      ],
-      "fonctionnalites": [
-        "Serveur LLM pour répondre aux prompts",
-        "Interface utilisateur simple",
-        "Très facilement extensible pour l'ajout de commandes"
-      ],
-      "image": "/projects/adam.png",
-      "github": "https://github.com/Izoret/Adam",
-      "link": "https://discord.com/oauth2/authorize?client_id=1291689809005248542&scope=bot&permissions=1099511627775"
-    },
-    {
-      "id": "6",
+      "id": "1",
       "titre": "Revolve",
       "description": "Jeu vidéo de réflexion pour PC",
       "categorie": "personnel",
@@ -142,9 +119,7 @@
         "Différents niveaux réfléchis différemment",
         "Analyse de l'expérience utilisateur"
       ],
-      "image": "/projects/revolve.png",
-      "github": "",
-      "link": ""
+      "image": "/projects/revolve.png"
     }
   ]
 }
