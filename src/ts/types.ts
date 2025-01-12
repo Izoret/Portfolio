@@ -9,5 +9,5 @@ export interface Project {
     fonctionnalites: string[];
     image: string;
     github: string;
-    demo: string;
+    link: string;
 }
