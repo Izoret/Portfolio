@@ -114,10 +114,10 @@ const education = [
       <section class="card floating">
         <h2 class="text-2xl font-semibold mb-4 gradient-text">CV</h2>
         <div class="bg-white/5 p-4 rounded border border-white/10">
-          <object data="/CV_Izoret_2025.pdf" type="application/pdf"
+          <object data="./CV_Izoret_2025.pdf" type="application/pdf"
                   width="100%" height="550px">
             <p class="text-center text-gray-400">Échec lors de l'affichage du PDF.
-              <a href="/CV_Izoret_2025.pdf">Télécharger</a> à la place.
+              <a href="./CV_Izoret_2025.pdf">Télécharger</a> à la place.
             </p>
           </object>
         </div>
