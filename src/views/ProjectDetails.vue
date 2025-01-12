@@ -61,12 +61,12 @@ onMounted(() => {
           </ul>
         </section>
 
-        <section v-if="project.github || project.link">
+        <section v-if="project.repository || project.link">
           <h2 class="text-2xl font-semibold mb-4 gradient-text">Liens</h2>
           <div class="space-y-2">
 
-            <a v-if="project.github"
-               :href="project.github"
+            <a v-if="project.repository"
+               :href="project.repository"
                class="text-primary-300 hover:text-primary-200 block"
                target="_blank"
             >

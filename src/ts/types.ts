@@ -8,6 +8,6 @@ export interface Project {
     presentation: string;
     fonctionnalites: string[];
     image: string;
-    github: string;
+    repository: string;
     link: string;
 }
