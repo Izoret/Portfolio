@@ -5,9 +5,7 @@ import {Project} from "../ts/types.ts";
 
 
 const recentProjects = computed<Project[]>(() => {
-  return projectsData.projects
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 3);
+  return projectsData.projects.slice(0, 3);
 });
 </script>
 

@@ -5,9 +5,9 @@ export interface Project {
     description: string;
     technologies: string[];
     categorie: string;
-    presentation: string;
+    presentation: string[];
     fonctionnalites: string[];
-    image: string;
-    repository: string;
-    link: string;
+    image?: string;
+    repository?: string;
+    link?: string;
 }
