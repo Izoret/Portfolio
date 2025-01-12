@@ -55,7 +55,7 @@ const education = [
           Au niveau personnel, l'informatique me <b>passionne</b>, et j'adore notamment la programmation en tant que
           science : j'ai commencé à coder à 13 ans avec le BASIC et l'HTML de manière autodidacte, et ma curiosité m'a
           poussée à explorer de nombreux languages, méthodes et technologies différents de mon côté, en plus de ma
-          formation (actuellement, j'approfondis le C++, l'électronique embarquée, et la programmation fonctionnelle).
+          formation (actuellement, j'approfondis Ansible, l'électronique embarquée, et la programmation fonctionnelle).
           <br>
           Toujours dans ce domaine, je trouve l'<b>open-source</b> fantastique et j'utilise Linux (Fedora) en tant qu'OS
           principal depuis plusieurs années, étant investi dans des causes qui me semblent importantes.

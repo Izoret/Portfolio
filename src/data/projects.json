@@ -2,112 +2,29 @@
   "projects": [
     {
       "id": "1",
-      "titre": "Application de Gestion de Budget",
-      "description": "Application web permettant de suivre ses dépenses et revenus",
+      "titre": "Format'IUT",
+      "description": "Application web de gestion de stages et alternances",
       "categorie": "academique",
-      "date": "Printemps 2024",
+      "date": "Hiver 2023-2024",
       "technologies": [
-        "Vue.js",
-        "Node.js",
-        "MongoDB"
-      ],
-      "presentation": "Application complète de gestion de budget personnel développée dans le cadre de mon projet de fin d'études. Cette solution permet aux utilisateurs de suivre leurs finances de manière intuitive et efficace.",
-      "fonctionnalites": [
-        "Suivi des dépenses en temps réel",
-        "Catégorisation automatique",
-        "Génération de rapports mensuels",
-        "Export des données en CSV"
-      ],
-      "image": "/images/budget-app.jpg",
-      "github": "https://github.com/username/projet",
-      "demo": "https://demo-projet.example.com"
-    },
-    {
-      "id": "3",
-      "titre": "Site E-commerce",
-      "description": "Développement d'une plateforme de vente en ligne",
-      "categorie": "professionnel",
-      "date": "Automne 2023",
-      "technologies": [
-        "React",
-        "Express",
-        "PostgreSQL"
-      ],
-      "presentation": "Plateforme e-commerce complète avec gestion des produits, panier d'achat et système de paiement sécurisé. Développée dans un contexte professionnel pour un client du secteur retail.",
-      "fonctionnalites": [
-        "Catalogue de produits",
-        "Système de panier",
-        "Paiement sécurisé",
-        "Gestion des commandes"
-      ],
-      "image": "/images/ecommerce.jpg",
-      "github": "https://github.com/username/ecommerce",
-      "demo": "https://demo-ecommerce.example.com"
-    },
-    {
-      "id": "4",
-      "titre": "CRM pour Cabinet Médical",
-      "description": "Système de gestion de relation client pour professionnels de santé",
-      "categorie": "professionnel",
-      "date": "Été 2023",
-      "technologies": [
-        "Vue.js",
-        "Laravel",
+        "PHP",
+        "JavaScript",
         "MySQL"
       ],
-      "presentation": "Solution CRM sur mesure pour un cabinet médical, permettant la gestion des patients, des rendez-vous et des dossiers médicaux de manière sécurisée.",
+      "presentation": [
+        "Format'IUT est un projet de groupe qui a duré 5 mois, consistant à créer un site web dynamique complet avec de nombreuses fonctionnalités.",
+        "Nous étions une équipe de 6 avec une gestion de projet Agile, et en plus d'être développeur, j'assurais la tâche de Product Owner (membre qui décide des tâches à prioriser pour satisfaire le client au mieux). Le site consiste à offrir une gestion pratique, intuitive et sécurisée des stages et alternances d'une école, côté étudiants mais aussi entreprise et enseignants.",
+        "Il contient notamment une large base de données en MySQL, un serveur en PHP (modèle MVCS), un système gérant de multiples types d'utilisateurs différents avec des permissions spécifiques, du CSS natif responsive, et un système d'alertes (messages flash, mails) parmis d'autres technologies. Le projet a été réalisé en méthode SCRUM, avec une forte utilisation de Git pour s'organiser."
+      ],
       "fonctionnalites": [
-        "Gestion des rendez-vous",
-        "Dossiers patients électroniques",
-        "Facturation automatisée",
-        "Rappels SMS/Email"
+        "Inscription, connexion, mail d'oubli de mot de passe sécurisés",
+        "Recherches avec filtres et tri",
+        "Démarches administratives facilitées",
+        "Import / Export de données en CSV"
       ],
-      "image": "/images/medical-crm.jpg",
-      "github": "https://github.com/username/medical-crm",
-      "demo": "https://demo-crm.example.com"
-    },
-    {
-      "id": "5",
-      "titre": "Bot Discord",
-      "description": "Bot pour gérer les événements d'une communauté",
-      "categorie": "personnel",
-      "date": "Printemps 2023",
-      "technologies": [
-        "Python",
-        "Discord.js"
-      ],
-      "presentation": "Bot Discord développé pour faciliter la gestion d'une communauté de développeurs. Permet l'organisation d'événements et la modération automatique.",
-      "fonctionnalites": [
-        "Création d'événements",
-        "Système de rappels",
-        "Modération automatique",
-        "Statistiques de la communauté"
-      ],
-      "image": "/images/discord-bot.jpg",
-      "github": "https://github.com/username/discord-bot",
-      "demo": "https://top.gg/bot/example"
-    },
-    {
-      "id": "6",
-      "titre": "Application Mobile de Fitness",
-      "description": "Application de suivi d'entraînement et de nutrition",
-      "categorie": "personnel",
-      "date": "Hiver 2022-2023",
-      "technologies": [
-        "React Native",
-        "Redux",
-        "Firebase"
-      ],
-      "presentation": "Application mobile personnelle développée pour suivre mes entraînements et mon alimentation. L'app propose des fonctionnalités de suivi de progression et de planification.",
-      "fonctionnalites": [
-        "Suivi des entraînements",
-        "Journal alimentaire",
-        "Calcul des macronutriments",
-        "Graphiques de progression"
-      ],
-      "image": "/images/fitness-app.jpg",
-      "github": "https://github.com/username/fitness-app",
-      "demo": "https://demo-fitness.example.com"
+      "image": "/projects/formatiut.png",
+      "github": "https://github.com/Izoret/FormatIUT",
+      "link": "https://webinfo.iutmontp.univ-montp2.fr/~fuertesn/devapplicationformatiut/web/controleurFrontal.php"
     },
     {
       "id": "2",
@@ -120,16 +37,111 @@
         "Firebase",
         "Material-UI"
       ],
-      "presentation": "Plateforme d'apprentissage en ligne développée pour faciliter l'enseignement à distance. Projet réalisé en collaboration avec le département informatique de l'université.",
+      "presentation": [],
       "fonctionnalites": [
         "Gestion des cours et des modules",
         "Système de quiz interactifs",
         "Suivi de progression",
         "Chat en temps réel"
       ],
-      "image": "/images/lms.jpg",
+      "image": "/projects/lms.jpg",
       "github": "https://github.com/username/lms",
-      "demo": "https://demo-lms.example.com"
+      "link": "https://demo-lms.example.com"
+    },
+    {
+      "id": "3",
+      "titre": "Site E-commerce",
+      "description": "Développement d'une plateforme de vente en ligne",
+      "categorie": "professionnel",
+      "date": "Automne 2023",
+      "technologies": [
+        "React",
+        "Express",
+        "PostgreSQL"
+      ],
+      "presentation": [],
+      "fonctionnalites": [
+        "Catalogue de produits",
+        "Système de panier",
+        "Paiement sécurisé",
+        "Gestion des commandes"
+      ],
+      "image": "/projects/ecommerce.jpg",
+      "github": "https://github.com/username/ecommerce",
+      "link": "https://demo-ecommerce.example.com"
+    },
+    {
+      "id": "4",
+      "titre": "CRM pour Cabinet Médical",
+      "description": "Système de gestion de relation client pour professionnels de santé",
+      "categorie": "professionnel",
+      "date": "Été 2023",
+      "technologies": [
+        "Vue.js",
+        "Laravel",
+        "MySQL"
+      ],
+      "presentation": [],
+      "fonctionnalites": [
+        "Gestion des rendez-vous",
+        "Dossiers patients électroniques",
+        "Facturation automatisée",
+        "Rappels SMS/Email"
+      ],
+      "image": "/projects/medical-crm.jpg",
+      "github": "https://github.com/username/medical-crm",
+      "link": "https://demo-crm.example.com"
+    },
+    {
+      "id": "5",
+      "titre": "Adam",
+      "description": "Bot d'intéractions utilisateur avec serveur IA",
+      "categorie": "personnel",
+      "date": "Automne 2024",
+      "technologies": [
+        "Modèles d'IA",
+        "Python",
+        "PyTorch",
+        "Flask",
+        "JavaScript",
+        "Node.js"
+      ],
+      "presentation": [
+        "Adam est un algorithme utilitaire que j'ai créé dans le contexte de bots Discord. La technologie utilisée ici est un serveur Node.js avec la librairie Discord.js.",
+        "En plus de réagir aux commandes des utilisateurs, j'ai permis à Adam de créer des réponses à des prompts pour être plus qu'un simple bot déterministe. Pour cela, j'ai réalisé un serveur Flask utilisant PyTorch avec différents modèles d'IA fine-tunés par moi-même pour répondre au mieux aux utilisateurs.",
+        "Cette expérience m'a permis d'accroître mes compétences en IA et en JavaScript, tout en fournissant un outil intéressant à différents serveurs Discord."
+      ],
+      "fonctionnalites": [
+        "Serveur LLM pour répondre aux prompts",
+        "Interface utilisateur simple",
+        "Très facilement extensible pour l'ajout de commandes"
+      ],
+      "image": "/projects/adam.png",
+      "github": "https://github.com/Izoret/Adam",
+      "link": "https://discord.com/oauth2/authorize?client_id=1291689809005248542&scope=bot&permissions=1099511627775"
+    },
+    {
+      "id": "6",
+      "titre": "Revolve",
+      "description": "Jeu vidéo de réflexion pour PC",
+      "categorie": "personnel",
+      "date": "Printemps 2023",
+      "technologies": [
+        "C#",
+        "Unity"
+      ],
+      "presentation": [
+        "Rev0lve est un jeu vidéo pour Linux que j'ai réalisé en solo dans mon temps libre, en approximativement 5 mois, basé sur le concept original de contrôler le niveau au lieu du personnage.",
+        "J'ai réalisé ce jeu en 2D en me servant du moteur Unity. Tous les visuels sont dessinés en pixel art par moi-même, et les scripts sont écrits à la main, en C#, en suivant les paradigmes de la programmation objet. Le défi principal dans ce projet était de garder la discipline de travailler dessus sur mon temps libre malgré le fait que je n'avais ni équipe ni motivation financière derrière, c'était intégralement pour me former à des technologies et réaliser un produit fini.",
+        "Il n'existe actuellement pas de démo publique car j'ai décidé de garder le concept pour le retravailler dans le futur avant de le rendre disponible."
+      ],
+      "fonctionnalites": [
+        "Différents niveaux réfléchis différemment",
+        "Analyse de l'expérience utilisateur"
+      ],
+      "image": "/projects/revolve.png",
+      "github": "",
+      "link": ""
     }
   ]
 }
