@@ -28,8 +28,8 @@
     },
     {
       "id": "2",
-      "titre": "Plateforme d'Apprentissage en Ligne",
-      "description": "LMS moderne pour l'enseignement à distance",
+      "titre": "",
+      "description": "",
       "categorie": "academique",
       "date": "Hiver 2023-2024",
       "technologies": [
@@ -44,31 +44,34 @@
         "Suivi de progression",
         "Chat en temps réel"
       ],
-      "image": "/projects/lms.jpg",
+      "image": "/projects/lms.png",
       "github": "https://github.com/username/lms",
       "link": "https://demo-lms.example.com"
     },
     {
       "id": "3",
-      "titre": "Site E-commerce",
-      "description": "Développement d'une plateforme de vente en ligne",
+      "titre": "Autoreg",
+      "description": "Développement d'un système d'automatisation de tâches",
       "categorie": "professionnel",
-      "date": "Automne 2023",
+      "date": "Printemps 2024",
       "technologies": [
-        "React",
-        "Express",
-        "PostgreSQL"
+        "Python + Tkinter",
+        "GitLab CI/CD",
+        "LDAP",
+        "Administration réseau"
       ],
-      "presentation": [],
+      "presentation": [
+        "Autoreg est un outil d'automatisation de tâches que j'ai réalisé pour le CINES, le centre de calcul le plus puissant de France.",
+        "Cet outil possède un unique noyau moteur qui réalise les tâches à automatiser, mais l'utilisation de ce noyau se présente sous deux formes : une interface graphique pour utilisation manuelle, et une pipeline automatique CI/CD couplée à un script Bash qui va lancer lui-même l'application. Ces deux méthodes sont dues à plusieurs contraintes durant le développement qui m'ont poussées à réaliser une solution qui fonctionnerait dans tous les cas possibles.",
+        "Au niveau de l'automatisation elle-même, elle consiste à réaliser des manipulations sur le serveur LDAP pour y enregistrer ou modifier des données, manipulations autrefois réalisées manuellement. Il y a également un système de requêtes HTTPS vers différents services ainsi que de la communication avec une base MySQL, mais le travail le plus conséquent était au niveau du LDAP."
+      ],
       "fonctionnalites": [
-        "Catalogue de produits",
-        "Système de panier",
-        "Paiement sécurisé",
-        "Gestion des commandes"
+        "Automatisation d'opérations LDAP",
+        "Système de vérification, de sécurité et de logging",
+        "Interface graphique simple",
+        "Pipeline et jobs CI/CD"
       ],
-      "image": "/projects/ecommerce.jpg",
-      "github": "https://github.com/username/ecommerce",
-      "link": "https://demo-ecommerce.example.com"
+      "image": "/projects/autoreg.png"
     },
     {
       "id": "4",
@@ -88,7 +91,7 @@
         "Facturation automatisée",
         "Rappels SMS/Email"
       ],
-      "image": "/projects/medical-crm.jpg",
+      "image": "/projects/medical-crm.png",
       "github": "https://github.com/username/medical-crm",
       "link": "https://demo-crm.example.com"
     },
