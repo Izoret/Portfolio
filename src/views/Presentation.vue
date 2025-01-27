@@ -101,7 +101,7 @@ const education = [
           poursuivre mes études en école d'ingénieur, et le cycle d'ingénieur peut se réaliser en alternance. Ainsi, je
           suis actuellement ouvert à des <b>opportunités d'alternance</b> pour début <b>Septembre 2025</b> et je sais
           que je
-          pourrais apporter beaucoup à votre <b>entreprise</b>. Les domaines seraient Dev, DevOps ou SysAdmin, les 3
+          pourrais apporter beaucoup à votre <b>entreprise</b>. Les domaines seraient Dev ou SysAdmin, les 2
           domaines
           que je maîtrise le mieux et avec lesquels j'ai déjà une certaine expérience professionnelle. Je vous remercie
           de l'attention portée à mon profil ; vous trouverez ci-dessous une copie de mon CV téléchargable, et n'hésitez

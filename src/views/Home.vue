@@ -14,7 +14,7 @@ const recentProjects = computed<Project[]>(() => {
     <div class="max-w-3xl mx-auto text-center mb-16">
       <h1 class="text-4xl font-bold mb-6 gradient-text">Bienvenue sur mon Portfolio</h1>
       <p class="text-xl text-gray-300">
-        Informaticien passionné spécialisé dans les domaines Dev/DevOps et SysAdmin.
+        Informaticien passionné spécialisé dans le Développement et l'Administration Système.
         <br>
         Découvrez mes réalisations et suivez mon parcours et ma vision dans le monde de l'informatique.
       </p>
