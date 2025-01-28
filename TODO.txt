@@ -1,2 +1,1 @@
 - faire vrai tri des réalisations par date (récentes ou non)
-- cv sur serveur webinfo?
