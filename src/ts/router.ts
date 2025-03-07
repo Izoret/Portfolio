@@ -4,6 +4,7 @@ import Presentation from "../views/Presentation.vue";
 import Contact from "../views/Contact.vue";
 import Projects from "../views/Projects.vue";
 import ProjectDetails from "../views/ProjectDetails.vue";
+import Apprentissages from "../views/Apprentissages.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -23,6 +24,11 @@ const router = createRouter({
             path: "/contact",
             name: "contact",
             component: Contact,
+        },
+        {
+            path: "/apprentissages",
+            name: "apprentissages",
+            component: Apprentissages,
         },
         {
             path: "/projects",
