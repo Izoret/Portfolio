@@ -1,98 +1,128 @@
 <script setup lang="ts">
+import projectsData from "../data/projects.json";
+import {Project} from "../ts/types.ts";
+
+const projets: Project[] = projectsData.projects;
+
 const apprentissages = [
   {
     titre: "Réaliser",
     description: "Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT...)",
     CE: [
-      "En respectant les besoins décrits par le client",
-      "En appliquant les principes algorithmiques",
-      "En veillant à la qualité du code et à sa documentation",
-      "En choisissant les ressources techniques appropriées"
+      {text: "En respectant les besoins décrits par le client", projets: [2, 3, 5]},
+      {text: "En appliquant les principes algorithmiques", projets: [1]},
+      {text: "En veillant à la qualité du code et à sa documentation", projets: [3, 5]},
+      {text: "En choisissant les ressources techniques appropriées", projets: [3, 4]}
     ],
     AC: [
-      "Choisir et implémenter les architectures adaptées",
-      "Faire évoluer une application existante",
-      "Intégrer des solutions dans un environnement de production"
+      {text: "Choisir et implémenter les architectures adaptées", projets: [3, 4]},
+      {text: "Faire évoluer une application existante", projets: [1, 5]},
+      {text: "Intégrer des solutions dans un environnement de production", projets: [2, 5]}
     ]
   },
   {
     titre: "Optimiser",
     description: "Analyser et optimiser des applications",
     CE: [
-      "En formalisant et modélisant des situations complexes",
-      "En recensant les algorithmes et les structures de données usuels",
-      "En s'appuyant sur des schémas de raisonnement",
-      "En justifiant les choix et validant les résultats"
+      {text: "En formalisant et modélisant des situations complexes", projets: [2, 3]},
+      {text: "En recensant les algorithmes et les structures de données usuels", projets: [1, 4]},
+      {text: "En s'appuyant sur des schémas de raisonnement", projets: [1, 3]},
+      {text: "En justifiant les choix et validant les résultats", projets: [2, 3]}
     ],
     AC: [
-      "Anticiper les résultats de diverses métriques (temps d'exécution, occupation mémoire...)",
-      "Profiler, analyser et justifier le comportement d'un code existant",
-      "Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application (imagerie, immersion, intelligence artificielle, jeux vidéos, parallélisme, calcul formel...)"
+      {text: "Anticiper les résultats de diverses métriques", projets: [1]},
+      {text: "Profiler, analyser et justifier le comportement d'un code existant", projets: [1]},
+      {text: "Choisir et utiliser des bibliothèques dédiées au domaine", projets: [3, 4]}
     ]
   },
   {
     titre: "Collaborer",
     description: "Manager une équipe informatique",
     CE: [
-      "En inscrivant sa démarche au sein d'une équipe pluridisciplinaire",
-      "En accompagnant la mise en oeuvre des évolutions informatiques",
-      "En veillant au respect des contraintes juridiques",
-      "En développant une communication efficace et collaborative"
+      {text: "En inscrivant sa démarche au sein d'une équipe pluridisciplinaire", projets: [2, 5]},
+      {text: "En accompagnant la mise en œuvre des évolutions informatiques", projets: [3]},
+      {text: "En veillant au respect des contraintes juridiques", projets: [2, 3]},
+      {text: "En développant une communication efficace et collaborative", projets: [2, 5]}
     ],
     AC: [
-      "Organiser et partager une veille numérique",
-      "Identifier les enjeux de l'économie de l'innovation numérique",
-      "Guider la conduite du changement informatique au sein d'une organisation",
-      "Accompagner le management de projet informatique"
+      {text: "Organiser et partager une veille numérique", projets: [4]},
+      {text: "Identifier les enjeux de l'économie de l'innovation numérique", projets: []},
+      {text: "Guider la conduite du changement informatique", projets: [3]},
+      {text: "Accompagner le management de projet informatique", projets: [2]}
     ]
   }
 ];
 </script>
 
 <template>
-  <div>
-    <h1>Portfolio d'Apprentissage</h1>
-    <div v-for="apprentissage in apprentissages" :key="apprentissage.titre" class="apprentissage">
-      <h2>{{ apprentissage.titre }}</h2>
-      <p>{{ apprentissage.description }}</p>
-      <h3>Composantes Essentielles</h3>
-      <ul>
-        <li v-for="ce in apprentissage.CE" :key="ce">{{ ce }}</li>
-      </ul>
-      <h3>Apprentissages Critiques</h3>
-      <ul>
-        <li v-for="ac in apprentissage.AC" :key="ac">{{ ac }}</li>
-      </ul>
+  <div class="page-container">
+    <h1 class="section-title">Portfolio d'Apprentissage</h1>
+
+    <div class="card floating">
+      <div class="space-y-8">
+        <div v-for="apprentissage in apprentissages" :key="apprentissage.titre" class="mb-4 gradient-text">
+          <h2 class="font-semibold gradient-text text-2xl">{{ apprentissage.titre }}</h2>
+          <p class="text-gray-300 font-semibold">{{ apprentissage.description }}</p>
+
+          <h3 class="text-xl font-semibold mt-4">Composantes Essentielles</h3>
+          <ul class="list-disc pl-5">
+            <li v-for="ce in apprentissage.CE" :key="ce.text" class="text-gray-300">
+              {{ ce.text }}
+              <ul v-if="ce.projets.length" class="pl-5">
+                <li v-for="id in ce.projets" :key="id">
+                  <a :href="`/projects/${id}`" class="text-primary-300 hover:text-primary-200">
+                    {{ projets.find(p => p.id === id.toString())?.titre || `Projet #${id}` }}
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-4">Apprentissages Critiques</h3>
+          <ul class="list-disc pl-5 text-primary-300">
+            <li v-for="ac in apprentissage.AC" :key="ac.text" class="text-gray-300">
+              {{ ac.text }}
+              <ul v-if="ac.projets.length" class="pl-5">
+                <li v-for="id in ac.projets" :key="id">
+                  <a :href="`/projects/${id}`" class="text-primary-300 hover:text-primary-200">
+                    {{ projets.find(p => p.id == id.toString())?.titre || `Projet #${id}` }}
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-h1 {
+.page-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section-title {
   text-align: center;
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
-.apprentissage {
-  margin: 20px 0;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.card {
+  background: #1a1a2e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-  color: #2c3e50;
+.floating {
+  transition: transform 0.3s ease-in-out;
 }
 
-h3 {
-  margin-top: 10px;
-  color: #34495e;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 5px;
+.floating:hover {
+  transform: translateY(-5px);
 }
 </style>
