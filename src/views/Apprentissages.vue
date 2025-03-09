@@ -70,27 +70,34 @@ const apprentissages = [
               {{ ce.text }}
               <ul v-if="ce.projets.length" class="pl-5">
                 <li v-for="id in ce.projets" :key="id">
-                  <a :href="`/projects/${id}`" class="text-primary-300 hover:text-primary-200">
+                  <router-link
+                      :to="{ name: 'project-details', params: { id: id } }"
+                      class="text-primary-300 hover:text-primary-200"
+                  >
                     {{ projets.find(p => p.id === id.toString())?.titre || `Projet #${id}` }}
-                  </a>
+                  </router-link>
                 </li>
               </ul>
             </li>
           </ul>
 
           <h3 class="text-xl font-semibold mt-4">Apprentissages Critiques</h3>
-          <ul class="list-disc pl-5 text-primary-300">
+          <ul class="list-disc pl-5">
             <li v-for="ac in apprentissage.AC" :key="ac.text" class="text-gray-300">
               {{ ac.text }}
               <ul v-if="ac.projets.length" class="pl-5">
                 <li v-for="id in ac.projets" :key="id">
-                  <a :href="`/projects/${id}`" class="text-primary-300 hover:text-primary-200">
-                    {{ projets.find(p => p.id == id.toString())?.titre || `Projet #${id}` }}
-                  </a>
+                  <router-link
+                      :to="{ name: 'project-details', params: { id: id } }"
+                      class="text-primary-300 hover:text-primary-200"
+                  >
+                    {{ projets.find(p => p.id === id.toString())?.titre || `Projet #${id}` }}
+                  </router-link>
                 </li>
               </ul>
             </li>
           </ul>
+
         </div>
       </div>
     </div>
