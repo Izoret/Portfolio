@@ -7,7 +7,6 @@ const links = [
   {name: "Présentation", path: "/presentation"},
   {name: "Projets", path: "/projects"},
   {name: "Contact", path: "/contact"},
-  {name: "Portfolio d'Apprentissage", path: "/apprentissages"}
 ];
 
 const isProjectsActive = computed(() => {
