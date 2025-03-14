@@ -12,7 +12,7 @@ keep_going() {
 	cd portfolio_deploy || kill_truc;
 	git checkout gh-pages
 	git pull
-	rm -rf assets img json
+	rm -rf assets project_images json
 	mv -f ../Portfolio/dist/* ../Portfolio/dist/.* .
   git add -A
   git commit -m "update pages"
