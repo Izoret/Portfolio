@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
     plugins: [vue()],
-    //base: '/~izoretr/Portfolio/',
+    base: '/Portfolio/',
     server: {
         host: true,
         port: 5173

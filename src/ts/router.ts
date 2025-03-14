@@ -6,8 +6,9 @@ import Projects from "../views/Projects.vue";
 import ProjectDetails from "../views/ProjectDetails.vue";
 
 const router = createRouter({
-    history: createWebHistory(),
+    //history: createWebHistory(),
     //history: createWebHistory('/~izoretr/Portfolio/'),
+    history: createWebHistory('/Portfolio/'),
     routes: [
         {
             path: "/",
