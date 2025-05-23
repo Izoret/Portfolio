@@ -12,15 +12,18 @@ keep_going() {
 	cd portfolio_deploy || kill_truc;
 	git checkout gh-pages
 	git pull
-	rm -rf assets project_images json
-	mv -f ../Portfolio/dist/* ../Portfolio/dist/.* .
-  git add -A
-  git commit -m "update pages"
-  git push origin gh-pages
-  cd ..
-  rm -rf portfolio_deploy
-  cd Portfolio || exit
-  rm -rf dist
+	find . -mindepth 1 -not -name '.git' -not -path './.git/*' -exec rm -rf {} +
+    mv -f ../Portfolio/dist/* ../Portfolio/dist/.* .
+    
+    cp index.html 404.html
+
+    git add -A
+    git commit -m "update pages"
+    git push origin gh-pages
+    cd ..
+    rm -rf portfolio_deploy
+    cd Portfolio || exit
+    rm -rf dist
 }
 
 npm run build
@@ -33,3 +36,4 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
