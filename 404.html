@@ -3,7 +3,9 @@
   <head>
     <meta http-equiv="refresh" content="0; url=/Portfolio/" />
     <script>
-      // Redirect back to the correct route
+      console.log("pathname : " + location.pathname);
+      console.log("search : " + location.search);
+      console.log("hash : " + location.hash);
       const path = location.pathname.replace('/Portfolio', '');
       const search = location.search;
       const hash = location.hash;
