@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/Portfolio/" />
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
     <script>
-      console.log("pathname : " + location.pathname);
-      console.log("search : " + location.search);
-      console.log("hash : " + location.hash);
-      const path = location.pathname.replace('/Portfolio/', '');
-      const search = location.search;
-      const hash = location.hash;
-      location.replace('/Portfolio/' + path + search + hash);
+      (function () {
+        const base = '/Portfolio';
+        let path = location.pathname;
+
+        // Avoid duplicate base
+        if (path.startsWith(base)) {
+          path = path.slice(base.length);
+        }
+
+        // Clean up leading slashes
+        path = path.replace(/^\/+/, '');
+
+        const search = location.search || '';
+        const hash = location.hash || '';
+
+        const target = `${base}/${path}${search}${hash}`;
+
+        // Only redirect if needed
+        if (location.pathname !== target) {
+          location.replace(target);
+        }
+      })();
     </script>
   </head>
   <body>
