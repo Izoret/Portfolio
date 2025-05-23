@@ -6,7 +6,7 @@
       console.log("pathname : " + location.pathname);
       console.log("search : " + location.search);
       console.log("hash : " + location.hash);
-      const path = location.pathname.replace('/Portfolio', '');
+      const path = location.pathname.replace('/Portfolio/', '');
       const search = location.search;
       const hash = location.hash;
       location.replace('/Portfolio/' + path + search + hash);
