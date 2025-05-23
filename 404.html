@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/Portfolio/" />
+    <script>
+      // Redirect back to the correct route
+      const path = location.pathname.replace('/Portfolio', '');
+      const search = location.search;
+      const hash = location.hash;
+      location.replace('/Portfolio/' + path + search + hash);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
+
